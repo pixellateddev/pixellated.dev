@@ -39,6 +39,12 @@
     },
   },
   "file_scan_exclusions": [
-    // "**/routeTree.gen.ts"
+    ".git",
+    ".vscode",
+    "node_modules",
+    ".output",
+    ".tanstack",
+    "**/routeTree.gen.ts",
+
   ]
 }
