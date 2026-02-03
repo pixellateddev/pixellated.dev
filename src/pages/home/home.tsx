@@ -4,7 +4,7 @@ import styles from './home.module.css'
 
 const Home: FC = () => {
   return (
-    <main>
+    <>
       <section className={styles.hero}>
         <h2 className={styles.hero__title}>
           building thoughtful, <br /> high-quality web systems.
@@ -14,7 +14,7 @@ const Home: FC = () => {
         </p>
         <img className={styles.hero__arc} src='/images/arc.png' alt='arc' />
       </section>
-      <Section title='explorations'>
+      <Section title='explorations' spacing='loose'>
         <div className={styles.projects_grid}>
           <ProjectCard
             title='Stardive'
@@ -46,12 +46,12 @@ const Home: FC = () => {
           </li>
         </ul>
       </Section>
-      <Section title='contact'>
+      <Section title='contact' bordered={false}>
         <p>
           email: <a href='mailto:pixellateddev@proton.me'>pixellated.dev@proton.me</a>
         </p>
       </Section>
-    </main>
+    </>
   )
 }
 
