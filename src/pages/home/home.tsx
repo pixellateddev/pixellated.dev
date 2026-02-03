@@ -18,21 +18,24 @@ const Home: FC = () => {
         <div className={styles.projects_grid}>
           <ProjectCard
             title='Stardive'
-            description='Cinematic space travel concept centered on storylelling. motion, and modern frontend craft.'
+            description='Cinematic space travel concept centered on storytelling, motion, and modern frontend craft.'
             image='/images/stardive.png'
             state='in progress'
+            slug='stardive'
           />
           <ProjectCard
             title='SimpleTasks'
-            description='A mimimal, opinionated task manager focused on speed, clarity, and low cogintive load.'
+            description='A minimal, opinionated task manager focused on speed, clarity, and low cognitive load.'
             image='/images/simpletasks.png'
             state='in progress'
+            slug='simpletasks'
           />
           <ProjectCard
             title='Blink'
-            description='Workflow-based feature flag management emphasising safety, iteration, and ercible'
+            description='Workflow-based feature flag management emphasising safety, iteration, and reversibility.'
             image='/images/blink.png'
             state='in progress'
+            slug='blink'
           />
         </div>
       </Section>
