@@ -1,0 +1,38 @@
+.project_card {
+  display: grid;
+  grid-template-columns: 1em 1fr 1em;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 1rem;
+  grid-template-areas:
+    "project_image project_image project_image"
+    ". project_title ."
+    ". project_description ."
+    ". project_state .";
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  padding-block-end: 1rem;
+  background-color: var(--color-surface);
+}
+
+.project_card__image {
+  grid-area: project_image;
+}
+
+.project_card__title {
+  grid-area: project_title;
+}
+
+.project_card__description {
+  grid-area: project_description;
+  color: var(--color-text-muted);
+}
+
+.project_card__state {
+  grid-area: project_state;
+  padding: 0.25rem 1rem;
+  background-color: oklch(from var(--color-accent) l c h / 0.1);
+  color: var(--color-accent);
+  justify-self: start;
+  border-radius: 24px;
+}
