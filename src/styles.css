@@ -70,7 +70,18 @@
 
   body {
     background-color: var(--color-bg);
+    background-image: url("/images/bg-light.png");
+    background-size: contain;
+
     color: var(--color-text);
+    font-weight: 300;
+    font-size: var(--font-body);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-image: url("/images/bg-dark.png");
+    }
   }
 
   h1,
@@ -78,18 +89,15 @@
   h3 {
     line-height: 1.2;
     margin: 0;
+    font-weight: 300;
   }
 
   h1 {
     font-size: var(--font-h1);
-    font-weight: 300;
-    margin-bottom: 1rem;
   }
 
   h2 {
     font-size: var(--font-h2);
-    font-weight: 300;
-    margin-bottom: 1rem;
   }
 
   p {

@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { ProjectCard } from '@/components'
+import { ProjectCard, Section } from '@/components'
 import styles from './home.module.css'
 
 const Home: FC = () => {
@@ -12,47 +12,45 @@ const Home: FC = () => {
         <p className={styles.hero__description}>
           experiments in architecture, accessibility, motion, and product ux.
         </p>
+        <img className={styles.hero__arc} src='/images/arc.png' alt='arc' />
       </section>
-      <section className={styles.explorations}>
-        <h2>explorations</h2>
+      <Section title='explorations'>
         <div className={styles.projects_grid}>
           <ProjectCard
             title='Stardive'
             description='Cinematic space travel concept centered on storylelling. motion, and modern frontend craft.'
-            image='https://placehold.co/400x200'
+            image='/images/stardive.png'
             state='in progress'
           />
           <ProjectCard
             title='SimpleTasks'
             description='A mimimal, opinionated task manager focused on speed, clarity, and low cogintive load.'
-            image='https://placehold.co/400x200'
-            state='completed'
+            image='/images/simpletasks.png'
+            state='in progress'
           />
           <ProjectCard
             title='Blink'
             description='Workflow-based feature flag management emphasising safety, iteration, and ercible'
-            image='https://placehold.co/400x200'
+            image='/images/blink.png'
             state='in progress'
           />
         </div>
-      </section>
-      <section>
-        <h2>background</h2>
-        <ul>
-          <li>
-            UI Engineer at Apple
+      </Section>
+      <Section title='background'>
+        <ul className={styles.background}>
+          <li className={styles.background__primary}>
+            UI Engineer at <span className={styles.background__company}>Apple</span>
             <ul>
-              <li>previously at Factset and Capgemini</li>
+              <li className={styles.background__secondary}>previously at Factset and Capgemini</li>
             </ul>
           </li>
         </ul>
-      </section>
-      <section>
-        <h2>contact</h2>
+      </Section>
+      <Section title='contact'>
         <p>
           email: <a href='mailto:pixellateddev@proton.me'>pixellated.dev@proton.me</a>
         </p>
-      </section>
+      </Section>
     </main>
   )
 }
