@@ -1,8 +1,18 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  border-bottom: 1px solid var(--color-border);
-  margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
+
+  &.section__tight {
+    gap: 1rem;
+  }
+
+  &.section__loose {
+    gap: 2rem;
+  }
+
+  &.section__bordered {
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 1.5rem;
+  }
 }

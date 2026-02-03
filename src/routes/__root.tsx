@@ -38,7 +38,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <body>
         <div className='app'>
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
         </div>
         <TanStackDevtools
